@@ -1,0 +1,24 @@
+AI Engineer
+
+Required Skills
+- Python
+- Machine Learning
+- Deep Learning
+- NLP
+- TensorFlow
+- PyTorch
+- Scikit-learn
+- Pandas
+- NumPy
+
+Preferred Skills
+- Docker
+- AWS
+- Computer Vision
+- LLMs
+
+Responsibilities
+- Build AI solutions.
+- Train deep learning models.
+- Deploy AI applications.
+- Optimize inference performance.

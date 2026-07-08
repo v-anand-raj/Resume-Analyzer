@@ -1,0 +1,19 @@
+Python Developer
+
+Required Skills
+- Python
+- OOP
+- SQL
+- Flask
+- Django
+- Git
+
+Preferred Skills
+- Docker
+- AWS
+- REST API
+
+Responsibilities
+- Develop Python applications.
+- Write clean code.
+- Build backend services.

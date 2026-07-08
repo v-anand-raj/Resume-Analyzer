@@ -1,0 +1,23 @@
+Data Analyst
+
+Required Skills
+
+- Python
+- SQL
+- Pandas
+- NumPy
+- Power BI
+- Excel
+- Data Analysis
+- Data Visualization
+- Machine Learning
+- Git
+
+Responsibilities
+
+Analyze business data to identify trends and insights.
+Develop dashboards using Power BI.
+Write SQL queries for data extraction.
+Perform data cleaning and preprocessing.
+Build machine learning models for predictive analysis.
+Collaborate with cross-functional teams.

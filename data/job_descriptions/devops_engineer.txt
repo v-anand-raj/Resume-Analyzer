@@ -1,0 +1,20 @@
+DevOps Engineer
+
+Required Skills
+- Docker
+- Kubernetes
+- Jenkins
+- Git
+- Linux
+- AWS
+- CI/CD
+
+Preferred Skills
+- Terraform
+- Ansible
+- Shell Scripting
+
+Responsibilities
+- Automate deployments.
+- Manage infrastructure.
+- Improve CI/CD pipelines.

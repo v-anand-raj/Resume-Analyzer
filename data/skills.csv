@@ -3,41 +3,96 @@ python
 java
 c
 c++
+c#
+kotlin
 sql
 mysql
+postgresql
 oracle
+sqlite
+mongodb
+redis
 html
 css
 javascript
+typescript
 bootstrap
+tailwind css
 react
+redux
 node.js
-streamlit
 flask
 django
+spring boot
+hibernate
+maven
+streamlit
 pandas
 numpy
 matplotlib
 seaborn
+plotly
 scikit-learn
 tensorflow
 keras
+pytorch
+xgboost
+lightgbm
+opencv
 machine learning
 deep learning
+artificial intelligence
+ai
 natural language processing
 nlp
+computer vision
+llms
+large language models
+feature engineering
+data preprocessing
 data science
 data analysis
 data visualization
+statistics
+business intelligence
 power bi
 tableau
 excel
+google sheets
 git
 github
 docker
+kubernetes
+jenkins
+terraform
+ansible
 aws
 azure
+gcp
 linux
-opencv
-xgboost
-lightgbm
+shell scripting
+rest api
+api
+json
+xml
+oop
+object oriented programming
+data structures
+algorithms
+problem solving
+agile methodology
+ci/cd
+unit testing
+etl
+firebase
+android studio
+network security
+cybersecurity
+ethical hacking
+penetration testing
+kali linux
+firewalls
+siem
+database design
+backup and recovery
+performance tuning

@@ -1,0 +1,18 @@
+Android Developer
+
+Required Skills
+- Java
+- Kotlin
+- Android Studio
+- XML
+- Git
+
+Preferred Skills
+- Firebase
+- REST API
+- SQLite
+
+Responsibilities
+- Build Android applications.
+- Debug mobile applications.
+- Improve UI performance.

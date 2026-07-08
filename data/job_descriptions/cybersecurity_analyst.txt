@@ -1,0 +1,19 @@
+Cybersecurity Analyst
+
+Required Skills
+- Network Security
+- Linux
+- Cybersecurity
+- Firewalls
+- SIEM
+- Python
+
+Preferred Skills
+- Penetration Testing
+- Kali Linux
+- Ethical Hacking
+
+Responsibilities
+- Monitor security incidents.
+- Assess vulnerabilities.
+- Improve security posture.

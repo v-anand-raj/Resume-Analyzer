@@ -1,0 +1,24 @@
+Data Scientist
+
+Required Skills
+- Python
+- SQL
+- Statistics
+- Machine Learning
+- Pandas
+- NumPy
+- Data Visualization
+- Power BI
+- Tableau
+
+Preferred Skills
+- Deep Learning
+- NLP
+- TensorFlow
+- Scikit-learn
+
+Responsibilities
+- Analyze complex datasets.
+- Build predictive models.
+- Present insights.
+- Work with stakeholders.

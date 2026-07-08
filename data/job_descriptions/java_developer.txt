@@ -1,0 +1,18 @@
+Java Developer
+
+Required Skills
+- Java
+- OOP
+- Spring Boot
+- SQL
+- Git
+
+Preferred Skills
+- Hibernate
+- Maven
+- REST API
+
+Responsibilities
+- Develop Java applications.
+- Maintain backend systems.
+- Optimize application performance.

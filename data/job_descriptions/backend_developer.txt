@@ -1,0 +1,24 @@
+Backend Developer
+
+Required Skills
+- Python
+- Java
+- SQL
+- MySQL
+- Flask
+- Django
+- REST API
+- Git
+- Linux
+
+Preferred Skills
+- Docker
+- AWS
+- Redis
+- PostgreSQL
+
+Responsibilities
+- Develop backend services.
+- Design APIs.
+- Integrate databases.
+- Optimize server performance.

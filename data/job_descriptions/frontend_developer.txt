@@ -1,0 +1,20 @@
+Frontend Developer
+
+Required Skills
+- HTML
+- CSS
+- JavaScript
+- Bootstrap
+- React
+- Git
+- Responsive Design
+
+Preferred Skills
+- TypeScript
+- Redux
+- Tailwind CSS
+
+Responsibilities
+- Develop responsive web interfaces.
+- Improve user experience.
+- Collaborate with backend developers.

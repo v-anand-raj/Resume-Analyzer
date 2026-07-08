@@ -1,0 +1,23 @@
+Full Stack Developer
+
+Required Skills
+- HTML
+- CSS
+- JavaScript
+- React
+- Python
+- Flask
+- SQL
+- Git
+- REST API
+
+Preferred Skills
+- Docker
+- AWS
+- Node.js
+- MongoDB
+
+Responsibilities
+- Develop frontend and backend.
+- Integrate APIs.
+- Maintain full-stack applications.

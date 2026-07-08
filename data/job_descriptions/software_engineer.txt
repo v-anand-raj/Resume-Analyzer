@@ -1,0 +1,34 @@
+Software Engineer
+
+Required Skills
+- Python
+- Java
+- C++
+- Data Structures
+- Algorithms
+- Object-Oriented Programming
+- SQL
+- Git
+- GitHub
+- Linux
+- REST API
+- Problem Solving
+
+Preferred Skills
+- Docker
+- AWS
+- CI/CD
+- Flask
+- Django
+- Unit Testing
+- Agile Methodology
+
+Responsibilities
+- Design, develop, and maintain software applications.
+- Write clean, efficient, and maintainable code.
+- Develop RESTful APIs and backend services.
+- Collaborate with frontend developers and QA teams.
+- Debug, test, and optimize applications.
+- Participate in code reviews and technical discussions.
+- Work with version control using Git.
+- Follow software development best practices.

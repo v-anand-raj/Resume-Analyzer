@@ -1,0 +1,18 @@
+Database Administrator
+
+Required Skills
+- SQL
+- MySQL
+- Oracle
+- PostgreSQL
+- Database Design
+- Backup and Recovery
+
+Preferred Skills
+- Performance Tuning
+- Linux
+
+Responsibilities
+- Manage databases.
+- Optimize queries.
+- Perform backups.

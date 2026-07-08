@@ -1,0 +1,26 @@
+Machine Learning Engineer
+
+Required Skills
+- Python
+- Machine Learning
+- Deep Learning
+- Scikit-learn
+- TensorFlow
+- Keras
+- Pandas
+- NumPy
+- Data Preprocessing
+- Feature Engineering
+
+Preferred Skills
+- Docker
+- AWS
+- NLP
+- Computer Vision
+- Git
+
+Responsibilities
+- Build machine learning models.
+- Train and evaluate models.
+- Optimize model performance.
+- Deploy ML solutions.

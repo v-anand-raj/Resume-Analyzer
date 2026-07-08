@@ -1,0 +1,19 @@
+Cloud Engineer
+
+Required Skills
+- AWS
+- Azure
+- Linux
+- Docker
+- Kubernetes
+- Git
+
+Preferred Skills
+- Terraform
+- Jenkins
+- CI/CD
+
+Responsibilities
+- Manage cloud infrastructure.
+- Deploy applications.
+- Monitor cloud services.
