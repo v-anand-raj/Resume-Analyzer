@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resume Analyzer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../static/css/style.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <h2>Resume Analyzer</h2>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Features</a></li>
+        <li><a href="#">About</a></li>
+      </ul>
+    </nav>
+    <section class="hero">
+      <div class="hero-left">
+        <h1>AI Powered Resume Analyzer</h1>
+        <p>
+          Analyze your resume against any job description using NLP, Machine
+          Learning and ATS Scoring.
+        </p>
+        <button id="startBtn">Analyze Resume</button>
+      </div>
+      <div class="hero-right">
+        <div class="upload-card">
+          <h2>Analyze Your Resume</h2>
+          <label>Upload Resume</label>
+          <input type="file" accept=".pdf" />
+          <label>Paste Job Description</label>
+          <textarea rows="8" placeholder="Paste Job Description..."></textarea>
+          <button class="analyze-btn">Analyze</button>
+        </div>
+      </div>
+    </section>
+    <section class="features">
+      <div class="feature">
+        <h3>ATS Score</h3>
+        <p>Get an ATS compatibility score.</p>
+      </div>
+      <div class="feature">
+        <h3>Skill Gap</h3>
+        <p>Find missing skills instantly.</p>
+      </div>
+      <div class="feature">
+        <h3>Suggestions</h3>
+        <p>Improve your resume with AI recommendations.</p>
+      </div>
+    </section>
+    <script src="../static/js/script.js"></script>
+  </body>
+</html>
