@@ -3,58 +3,175 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title>Resume Analyzer</title>
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="../static/css/style.css" />
+
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/style.css') }}"
+    />
+
+    <style>
+      .upload-card input,
+      .upload-card select {
+        width: 100%;
+        padding: 14px;
+        margin: 12px 0 20px;
+        border-radius: 8px;
+        box-sizing: border-box;
+      }
+
+      .upload-card select {
+        background: #111827;
+        color: white;
+        border: none;
+      }
+
+      .analyze-btn:disabled {
+        opacity: 0.6;
+        cursor: not-allowed;
+      }
+
+      #loadingOverlay {
+        display: none;
+        position: fixed;
+        inset: 0;
+        z-index: 9999;
+        background: rgba(15, 23, 42, 0.94);
+        color: white;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        font-family: Poppins, sans-serif;
+      }
+
+      .loader {
+        width: 45px;
+        height: 45px;
+        border: 5px solid #64748b;
+        border-top-color: #3b82f6;
+        border-radius: 50%;
+        animation: spin 0.8s linear infinite;
+        margin-bottom: 20px;
+      }
+
+      @keyframes spin {
+        to {
+          transform: rotate(360deg);
+        }
+      }
+    </style>
   </head>
+
   <body>
     <nav class="navbar">
       <h2>Resume Analyzer</h2>
+
       <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Features</a></li>
-        <li><a href="#">About</a></li>
+        <li><a href="/">Home</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#about">About</a></li>
       </ul>
     </nav>
+
     <section class="hero">
       <div class="hero-left">
         <h1>AI Powered Resume Analyzer</h1>
+
         <p>
-          Analyze your resume against any job description using NLP, Machine
-          Learning and ATS Scoring.
+          Analyze your resume against role-specific requirements using NLP,
+          keyword matching and ATS scoring.
         </p>
-        <button id="startBtn">Analyze Resume</button>
+
+        <button id="startBtn" type="button">Analyze Resume</button>
       </div>
-      <div class="hero-right">
+
+      <div class="hero-right" id="upload">
         <div class="upload-card">
           <h2>Analyze Your Resume</h2>
-          <label>Upload Resume</label>
-          <input type="file" accept=".pdf" />
-          <label>Paste Job Description</label>
-          <textarea rows="8" placeholder="Paste Job Description..."></textarea>
-          <button class="analyze-btn">Analyze</button>
+
+          <form
+            id="analyzeForm"
+            action="/analyze"
+            method="POST"
+            enctype="multipart/form-data"
+          >
+            <label for="resume">Upload Resume</label>
+
+            <input
+              type="file"
+              name="resume"
+              id="resume"
+              accept=".pdf"
+              required
+            />
+
+            <label for="role">Select Job Role</label>
+
+            <select name="role" id="role" required>
+              <option value="">Choose a job role</option>
+
+              <option value="AI Engineer">AI Engineer</option>
+
+              <option value="Cybersecurity Analyst">
+                Cybersecurity Analyst
+              </option>
+
+              <option value="Data Analyst">Data Analyst</option>
+
+              <option value="Database Administrator">
+                Database Administrator
+              </option>
+
+              <option value="Penetration Tester">Penetration Tester</option>
+
+              <option value="Software Engineer">Software Engineer</option>
+
+              <option value="Systems Analyst">Systems Analyst</option>
+
+              <option value="Web Developer">Web Developer</option>
+            </select>
+
+            <button type="submit" class="analyze-btn" id="analyzeBtn">
+              Analyze
+            </button>
+          </form>
         </div>
       </div>
     </section>
-    <section class="features">
+
+    <section class="features" id="features">
       <div class="feature">
         <h3>ATS Score</h3>
         <p>Get an ATS compatibility score.</p>
       </div>
+
       <div class="feature">
         <h3>Skill Gap</h3>
         <p>Find missing skills instantly.</p>
       </div>
+
       <div class="feature">
         <h3>Suggestions</h3>
-        <p>Improve your resume with AI recommendations.</p>
+        <p>Identify missing role requirements.</p>
       </div>
     </section>
-    <script src="../static/js/script.js"></script>
+
+    <div id="loadingOverlay">
+      <div class="loader"></div>
+      <h2>Analyzing Your Resume...</h2>
+      <p>Extracting text and matching role requirements.</p>
+      <p>Please wait.</p>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
   </body>
 </html>

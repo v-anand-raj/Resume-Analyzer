@@ -3,64 +3,101 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Analysis Result</title>
-    <link rel="stylesheet" href="../static/css/result.css" />
+
+    <title>Analysis Results</title>
+
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/result.css') }}"
+    />
   </head>
+
   <body>
     <nav>
       <h2>Resume Analyzer</h2>
     </nav>
-    <div class="dashboard">
+
+    <main class="dashboard">
+      <!-- Total Compatibility Points -->
       <div class="card score-card">
-        <h2>ATS Score</h2>
+        <h2>Resume Compatibility Points</h2>
+
         <div class="score-circle">
-          <span id="score">84%</span>
+          <span id="score">{{ result.total_points }}</span>
         </div>
+
+        <h3>{{ result.role }}</h3>
+
+        <p>{{ result.filename }}</p>
       </div>
+
+      <!-- Category-wise Points -->
       <div class="card">
-        <h2>Resume Summary</h2>
-        <p>Strong Python and SQL background with good analytical skills.</p>
+        <h2>Category-wise Points</h2>
+
+        {% for category, details in result.categories.items() %}
+
+        <div class="category-score">
+          <h3>{{ category.replace("_", " ").title() }}</h3>
+
+          <p>
+            {{ details.earned_points }} points ({{ details.matched_count }}
+            matched skills × {{ details.points_per_skill }} points)
+          </p>
+        </div>
+
+        {% endfor %}
       </div>
+
+      <!-- Matched Requirements -->
       <div class="card">
-        <h2>Matched Skills</h2>
+        <h2>Matched Requirements</h2>
+
+        {% for category, details in result.categories.items() %}
+
+        <h3>{{ category.replace("_", " ").title() }}</h3>
+
         <ul>
-          <li>Python</li>
-          <li>SQL</li>
-          <li>Power BI</li>
-          <li>Pandas</li>
+          {% for item in details.matched %}
+          <li>{{ item }}</li>
+          {% else %}
+          <li>No matching requirements found.</li>
+          {% endfor %}
         </ul>
+
+        {% endfor %}
       </div>
+
+      <!-- Missing Requirements -->
       <div class="card">
-        <h2>Missing Skills</h2>
+        <h2>Missing Requirements</h2>
+
+        {% for category, details in result.categories.items() %}
+
+        <h3>{{ category.replace("_", " ").title() }}</h3>
+
         <ul>
-          <li>Docker</li>
-          <li>Statistics</li>
-          <li>Tableau</li>
+          {% for item in details.missing %}
+          <li>{{ item }}</li>
+          {% else %}
+          <li>All requirements matched.</li>
+          {% endfor %}
         </ul>
+
+        {% endfor %}
       </div>
-      <div class="card">
-        <h2>Detected Role</h2>
-        <h3>Data Analyst</h3>
-        <p>Confidence : 92%</p>
-      </div>
-      <div class="card">
-        <h2>Semantic Similarity</h2>
-        <h3>88%</h3>
-      </div>
-      <div class="card suggestion">
-        <h2>Suggestions</h2>
-        <ul>
-          <li>Add Statistics projects.</li>
-          <li>Learn Tableau.</li>
-          <li>Mention SQL optimization.</li>
-          <li>Add measurable achievements.</li>
-        </ul>
-      </div>
-    </div>
+    </main>
+
     <div class="buttons">
-      <button>Analyze Another Resume</button>
-      <button>Download Report</button>
+      <a href="/">
+        <button type="button">Analyze Another Resume</button>
+      </a>
+
+      <button type="button" onclick="window.print()">
+        Download / Print Report
+      </button>
     </div>
-    <script src="../static/js/result.js"></script>
+
+    <script src="{{ url_for('static', filename='js/result.js') }}"></script>
   </body>
 </html>
